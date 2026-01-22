@@ -1,0 +1,144 @@
+body {
+  background-color: blueviolet;
+}
+
+.curated-cards.list{
+  background-color: #012740;
+  border-radius: 0px 0px 10px 10px;
+}
+.curated-cards > ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 0 10px;
+  color: #012740;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.curated-cards > ul > li {
+  display: flex;
+  align-items: flex-start;
+  padding: 0;
+  gap: 28px;
+  width: 432px;
+  height: 104.23px;
+  flex-grow: 1;
+}
+
+.curated-cards .curated-cards-card-body {
+  margin: 16px;
+}
+
+.curated-cards .curated-cards-card-image picture {
+  line-height: 0;
+}
+
+.curated-cards .curated-cards-card-body > *:first-child {
+  margin-top: 0;
+}
+
+.curated-cards > ul > li img {
+  width: 160px;
+  height: 104.23px;
+  border-radius: 5px;
+}
+
+.curated-cards-card-text-wrapper > p {
+  margin: 0;
+  width: 244px;
+  height: 66px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 140%;
+  color: #FFFFFF;
+}
+
+.curated-cards-card-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  gap: 16px;
+  width: 244px;
+  height: 104.23px;
+  flex-grow: 1;
+}
+
+.event-info > p {
+  margin: 0;
+}
+
+.curated-cards-card-event {
+  width: 244px;
+  height: 13px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 110%;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #8A9DB1;
+}
+.feature-card picture {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  inset: 0;
+  box-sizing: border-box;
+  background: linear-gradient(1.27deg, #012740 5.95%, rgba(1, 39, 64, 0.06) 52.78%)
+}
+
+.feature-card picture img {
+  object-fit: cover;
+  width: 100%;
+  height: 50%;
+  z-index: -1;
+}
+
+.feature-card {
+  position: relative;
+  border-radius: 10px 10px 0px 0px;
+  overflow: hidden;
+}
+.feature-card-content {
+  position: absolute;
+  bottom: 20px; /* Position slightly up from the bottom */
+  left: 20px; /* Position slightly to the right from the left edge */
+  width: calc(100% - 40px); /* Adjust width to account for left/right padding */ 
+  color: #fff; /* Text color for contrast */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.feature-card-content-heading {
+  font-size: 24px;
+  margin: 0 0 10px;
+}
+
+.feature-card-content-description {
+  font-size: 16px;
+  margin: 0 0 20px;
+  text-align: left; /* Align text to the left */
+}
+
+.feature-card-content button {
+  position: absolute;
+  right: 20px; /* Position the button 20px from the right edge of the .feature-card-content */
+  bottom: 20px; /* Position the button 20px from the bottom edge of the .feature-card-content */
+  padding: 10px 20px; /* Adjust padding for the button */
+  font-size: 16px; /* Font size for button text */
+  width: 182px;
+  height: 55px;
+  background: #FFFFFF;
+  border-radius: 100px;
+}
+
+.feature-card-content button:hover {
+  background-color: #f0f0f0; /* Slightly grey background on hover */
+  color: #333; /* Slightly darker text color on hover for better contrast */
+  border-color: #333; /* Darker border color on hover */
+}
+
+

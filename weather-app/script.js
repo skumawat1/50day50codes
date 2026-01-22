@@ -1,4 +1,4 @@
-const api= "{api-key}";
+const apiKey = "a8ee75ca2ae3a2ae65c5d5ba81b4ee04";
 const apiUrl = "https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
 
 const searchBox = document.querySelector(".search input");
@@ -7,7 +7,7 @@ const weatherIcon = document.querySelector(".weather-icon");
 console.log(weatherIcon.src);
 
 async function checkWeather(city){
-    const resp = await fetch(apiUrl + city + `&appid=${api}`);
+    const resp = await fetch(apiUrl + city + `&appid=${apiKey}`);
 
     if(resp.status == 404){
         document.querySelector(".error").style.display = "block";

@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Parallax Galaxy : Html5 Parallax Plugin</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <section class="parallax-container">
+        <div class="main-container headingtext" data-ease="0.3" data-scale="-0.0003">
+         
+            <img class="logo-icon" src="https://simplifyscript.com/wp-content/uploads/2024/08/main-logo.png"/>
+            <h1>The Parallax Galaxy</h1>
+            <h3>Easy Parallax Plugin by SimplifyScript</h3>
+            <a class="download-button" href="https://simplifyscript.com/wp-content/uploads/2024/08/javascript-parallax-scrolling.zip">Download Plugin</a>
+        </div>
+        <div class="planets-met">
+        
+         <div class="parallax-planet-sm" data-opacity="1"  data-diagonally=".6" data-ease="0.7" data-rotate=".05" data-scale="-0.0001">
+        
+            <img src="https://simplifyscript.com/wp-content/uploads/2024/08/planet-sm.png" />
+         
+         
+
+         </div>
+         <div class="parallax-metroids" data-diagonally="-.8" data-ease="1.5" data-scale="0.0005">
+         
+            <img src="https://simplifyscript.com/wp-content/uploads/2024/08/metroides.png" />
+      
+         
+          </div>
+
+         </div>
+
+
+         <div class="parallax-austronout"  data-diagonally=".6"  data-ease=".005" data-rotate=".05">
+         
+          <img src="https://simplifyscript.com/wp-content/uploads/2024/08/astrounout.png" />
+    
+       
+        </div>
+
+
+         <div class="parallax-big"  data-ease=".05">
+         
+          <img src="https://simplifyscript.com/wp-content/uploads/2024/08/bigplanet.png" />
+
+          <div class="content-transparent fordesktop" data-ease="-0.5">
+            <h2>Easy apply parallax on each elements by simple 
+              adding the attributes on the HTML Tags</h2>
+
+              <div class="setup-data">
+                <h3>Overview</h3>
+                <p>
+                  The Parallax Galaxy Plugin is a lightweight and customizable JavaScript plugin designed to add parallax effects to elements on a webpage. The plugin allows elements to move at different speeds and directions based on the user's scroll position, creating an engaging and dynamic user experience.
+                  </p>
+                  <h3>Features</h3>
+                
+                    <ul>
+  <li>Multiple Parallax Elements: Apply parallax effects to multiple elements within a specified container.</li>
+  <li>Customizable Effects: Control the speed, direction, scale, rotation, and opacity of elements based on scroll position.</li>
+    <li>Easy Initialization: Simply initialize the plugin, and it will automatically apply effects to all elements that match the specified selectors.</li>
+
+</ul>
+
+               <h3>Installation</h3>
+               <p>
+                Include the script for the Parallax Galaxy Plugin in your project:
+                
+                <pre><div class="language-html" style="color:#f8f8f2;background:#282a36;text-shadow:0 1px rgba(0, 0, 0, 0.3);font-family:Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none;padding:1em;margin:.5em 0;overflow:auto;border-radius:0.3em"><code class="language-html" style="color:#f8f8f2;background:none;text-shadow:0 1px rgba(0, 0, 0, 0.3);font-family:Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none"><span class="linenumber react-syntax-highlighter-line-number" style="display:inline-block;min-width:1.25em;padding-right:1em;text-align:right;user-select:none;color:#6272a4">1</span><span></span><span class="token" style="color:#f8f8f2">&lt;</span><span class="token" style="color:#ff79c6">script</span><span class="token" style="color:#ff79c6"> </span><span class="token" style="color:#50fa7b">src</span><span class="token attr-equals" style="color:#f8f8f2">=</span><span class="token" style="color:#f8f8f2">"</span><span class="token" style="color:#f1fa8c">path/to/parallaxGalaxy.js</span><span class="token" style="color:#f8f8f2">"</span><span class="token" style="color:#f8f8f2">&gt;</span><span class="token" style="color:#f8f8f2">&lt;/</span><span class="token" style="color:#ff79c6">script</span><span class="token" style="color:#f8f8f2">&gt;</span></code></div></pre></p>
+
+                <h3>Usage
+                 
+                  
+                </h3>
+                <h4>HTML Structure</h4>
+                <p>To use the Parallax Galaxy Plugin, your HTML should be structured as follows:</p>
+                <pre>
+                  <div class="language-html" style="color:#f8f8f2;background:#282a36;text-shadow:0 1px rgba(0, 0, 0, 0.3);font-family:Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none;padding:1em;margin:.5em 0;overflow:auto;border-radius:0.3em"><code class="language-html" style="color:#f8f8f2;background:none;text-shadow:0 1px rgba(0, 0, 0, 0.3);font-family:Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none">
+                  &lt;<span style="color:#ff79c6">div</span> <span style="color:#50fa7b">class</span>=<span style="color:#f8f8f2">"parallax-container"</span>&gt;<br>
+                  &lt;<span style="color:#ff79c6">div</span> <span style="color:#50fa7b">data-ease</span>=<span style="color:#f1fa8c">"0.5"</span> <span style="color:#50fa7b">data-diagonally</span>=<span style="color:#f1fa8c">"0.2"</span> <span style="color:#50fa7b">data-scale</span>=<span style="color:#f1fa8c">"0.05"</span> <span style="color:#50fa7b">data-rotate</span>=<span style="color:#f1fa8c">"1"</span> <span style="color:#50fa7b">data-opacity</span>=<span style="color:#f1fa8c">"0.8"</span>&gt;<br>
+                  &lt;!-- Content here --&gt;<br>
+                  &lt;/<span style="color:#ff79c6">div</span>&gt;<br>
+                  &lt;<span style="color:#ff79c6">div</span> <span style="color:#50fa7b">data-ease</span>=<span style="color:#f1fa8c">"0.3"</span> <span style="color:#50fa7b">data-rotate</span>=<span style="color:#f1fa8c">"0.5"</span>&gt;<br>
+                  &lt;!-- Content here --&gt;<br>
+                  &lt;/<span style="color:#ff79c6">div</span>&gt;<br>
+                  &lt;/<span style="color:#ff79c6">div</span>&gt;
+                  </code>
+                  </div>
+                  </pre>
+                  <h3>Data Attributes</h3>
+                  <uL>
+                   <li> data-ease: Defines the vertical scroll speed of the element relative to the window scroll. Lower values move slower.</li>
+                   <li> data-diagonally: Defines the horizontal scroll speed of the element relative to the window scroll. Lower values move slower.</li>
+                   <li> data-scale: Defines the scaling factor of the element as it scrolls. Positive values increase the size, while negative values decrease it.</li>
+                    <li>data-rotate: Defines the rotation angle of the element in degrees as it scrolls.</li>
+                    <li>data-opacity: Defines the starting opacity of the element, which decreases as the user scrolls down the page.</li>
+                  </uL>
+                  <br/>
+                  <h3>JavaScript Initialization</h3>
+                  <p>After including the plugin script, initialize it with the following JavaScript code:</p>
+                  <pre><div class="language-html" style="color:#f8f8f2;background:#282a36;text-shadow:0 1px rgba(0, 0, 0, 0.3);font-family:Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none;padding:1em;margin:.5em 0;overflow:auto;border-radius:0.3em"><code class="language-html" style="color:#f8f8f2;background:none;text-shadow:0 1px rgba(0, 0, 0, 0.3);font-family:Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none"><span class="linenumber react-syntax-highlighter-line-number" style="display:inline-block;min-width:1.25em;padding-right:1em;text-align:right;user-select:none;color:#6272a4"></span><span></span><span  class="token" style="color:#f1fa8c">parallaxGalaxy.init();</span></code></div></pre>
+                    <p>This will automatically apply the parallax effects to all elements within the .parallax-container that have the necessary data-* attributes.</p>
+
+                    <h3>API Reference</h3>
+                    <p>  parallaxGalaxy<br/>
+                      The main object containing all methods and properties of the plugin.</p>
+
+                      <h4>Properties</h4>
+                      <ul>
+                        <li>
+                        <b>parallaxElements:</b> An array to store all elements that will have the parallax effect applied.
+                      </li>
+                    <li>
+                        <b>selectors:</b> Contains the CSS selectors used to find the parallax container and elements.
+                        <ul>
+                          <li>
+                            <b>parallaxContainer: </b> The selector for the main container that holds the parallax elements. Default: ".parallax-container"
+                            </li>
+                            <li>
+                            <b>parallaxElement:</b> The selector for individual parallax elements. Default: "div[data-ease]"
+                          </li>
+                        </ul>
+                      </li>
+
+                      
+                      </ul>
+                      </ul>
+                      <h4>Methods</h4>
+                        <ul>
+                          <li>
+                          <b>applyParallax(elements):</b> The core function that calculates and applies the parallax effects based on the scroll position.
+                          </li>
+                        <li>
+                        elements: An array of elements to which the parallax effects will be applied.
+                      </li>
+<li>
+                        init(): Initializes the plugin by finding all relevant elements and applying the parallax effects. It automatically calls applyParallax().
+                      </li>
+                      </ul>
+
+                      <h4>Customization</h4>
+                      <p>
+                        The Parallax Galaxy Plugin can be customized by modifying the selectors property to target different containers or elements. Additionally, you can add more data attributes to control other CSS properties as needed.</p>
+
+                        <h4>Browser Compatibility </h4>
+                          <p>The Parallax Galaxy Plugin is compatible with all modern browsers that support querySelectorAll, addEventListener, and CSS transform properties.</p>
+                       
+                          <h4>License</h4>
+<p>                          This plugin is open-source and available under the MIT License.
+                        </p>
+                       
+                      
+              </div>
+          </div>
+    
+       
+        </div>
+        <div class="last-galaxy">
+       
+          <div class="planet-blue fordesktop" data-ease=".15"><img src="https://simplifyscript.com/wp-content/uploads/2024/08/planet-right.png"/></div>
+        </div>
+     
+      <div class="sm-metriods-con">
+        <div class="met-two"  data-diagonally="-.3" data-ease="1.3" data-scale="0.0001"><img src="https://simplifyscript.com/wp-content/uploads/2024/08/metroides.png"/></div>
+        <div class="met-one"  data-diagonally="-.32" data-ease="1.2"><img src="https://simplifyscript.com/wp-content/uploads/2024/08/metroides.png"/></div>
+        <div class="met-three"  data-diagonally="-.2" data-ease="1"><img src="https://simplifyscript.com/wp-content/uploads/2024/08/metroides.png"/></div>
+      </div>
+      <div class="planet-moon" data-ease="-0.7">
+      
+        <img src="https://simplifyscript.com/wp-content/uploads/2024/08/bigplanat-moon.png"/></div>
+      <div class="bottom-bg">
+       
+        
+        <img src="https://simplifyscript.com/wp-content/uploads/2024/08/bottombg.png"/>
+    
+      
+      </div>
+        
+  
+    <div class="space-ship" data-ease="-1"><img src="https://simplifyscript.com/wp-content/uploads/2024/08/space-ship.png">
+    <div class="fire-sprite"><img src="https://simplifyscript.com/wp-content/uploads/2024/08/fire1.png"/></div>
+    </div>
+ 
+      <div class="stars-bg" data-ease="0.5" data-scale="0.0001"></div>
+      <div class="content-transparent mobile-content " data-ease="0">
+        <h2>Easy apply parallax on each elements by simple 
+          adding the attributes on the HTML Tags</h2>
+
+          <div class="setup-data">
+            <h3>Overview</h3>
+            <p>
+              The Parallax Galaxy Plugin is a lightweight and customizable JavaScript plugin designed to add parallax effects to elements on a webpage. The plugin allows elements to move at different speeds and directions based on the user's scroll position, creating an engaging and dynamic user experience.
+              </p>
+              <h3>Features</h3>
+            
+                <ul>
+<li>Multiple Parallax Elements: Apply parallax effects to multiple elements within a specified container.</li>
+<li>Customizable Effects: Control the speed, direction, scale, rotation, and opacity of elements based on scroll position.</li>
+<li>Easy Initialization: Simply initialize the plugin, and it will automatically apply effects to all elements that match the specified selectors.</li>
+
+</ul>
+
+           <h3>Installation</h3>
+           <p>
+            Include the script for the Parallax Galaxy Plugin in your project:
+            
+            <pre><div class="language-html" style="color:#f8f8f2;background:#282a36;text-shadow:0 1px rgba(0, 0, 0, 0.3);font-family:Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none;padding:1em;margin:.5em 0;overflow:auto;border-radius:0.3em"><code class="language-html" style="color:#f8f8f2;background:none;text-shadow:0 1px rgba(0, 0, 0, 0.3);font-family:Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none"><span class="linenumber react-syntax-highlighter-line-number" style="display:inline-block;min-width:1.25em;padding-right:1em;text-align:right;user-select:none;color:#6272a4">1</span><span></span><span class="token" style="color:#f8f8f2">&lt;</span><span class="token" style="color:#ff79c6">script</span><span class="token" style="color:#ff79c6"> </span><span class="token" style="color:#50fa7b">src</span><span class="token attr-equals" style="color:#f8f8f2">=</span><span class="token" style="color:#f8f8f2">"</span><span class="token" style="color:#f1fa8c">path/to/parallaxGalaxy.js</span><span class="token" style="color:#f8f8f2">"</span><span class="token" style="color:#f8f8f2">&gt;</span><span class="token" style="color:#f8f8f2">&lt;/</span><span class="token" style="color:#ff79c6">script</span><span class="token" style="color:#f8f8f2">&gt;</span></code></div></pre></p>
+
+            <h3>Usage
+             
+              
+            </h3>
+            <h4>HTML Structure</h4>
+            <p>To use the Parallax Galaxy Plugin, your HTML should be structured as follows:</p>
+            <pre>
+              <div class="language-html" style="color:#f8f8f2;background:#282a36;text-shadow:0 1px rgba(0, 0, 0, 0.3);font-family:Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none;padding:1em;margin:.5em 0;overflow:auto;border-radius:0.3em"><code class="language-html" style="color:#f8f8f2;background:none;text-shadow:0 1px rgba(0, 0, 0, 0.3);font-family:Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none">
+              &lt;<span style="color:#ff79c6">div</span> <span style="color:#50fa7b">class</span>=<span style="color:#f8f8f2">"parallax-container"</span>&gt;<br>
+              &lt;<span style="color:#ff79c6">div</span> <span style="color:#50fa7b">data-ease</span>=<span style="color:#f1fa8c">"0.5"</span> <span style="color:#50fa7b">data-diagonally</span>=<span style="color:#f1fa8c">"0.2"</span> <span style="color:#50fa7b">data-scale</span>=<span style="color:#f1fa8c">"0.05"</span> <span style="color:#50fa7b">data-rotate</span>=<span style="color:#f1fa8c">"1"</span> <span style="color:#50fa7b">data-opacity</span>=<span style="color:#f1fa8c">"0.8"</span>&gt;<br>
+              &lt;!-- Content here --&gt;<br>
+              &lt;/<span style="color:#ff79c6">div</span>&gt;<br>
+              &lt;<span style="color:#ff79c6">div</span> <span style="color:#50fa7b">data-ease</span>=<span style="color:#f1fa8c">"0.3"</span> <span style="color:#50fa7b">data-rotate</span>=<span style="color:#f1fa8c">"0.5"</span>&gt;<br>
+              &lt;!-- Content here --&gt;<br>
+              &lt;/<span style="color:#ff79c6">div</span>&gt;<br>
+              &lt;/<span style="color:#ff79c6">div</span>&gt;
+              </code>
+              </div>
+              </pre>
+              <h3>Data Attributes</h3>
+              <uL>
+               <li> data-ease: Defines the vertical scroll speed of the element relative to the window scroll. Lower values move slower.</li>
+               <li> data-diagonally: Defines the horizontal scroll speed of the element relative to the window scroll. Lower values move slower.</li>
+               <li> data-scale: Defines the scaling factor of the element as it scrolls. Positive values increase the size, while negative values decrease it.</li>
+                <li>data-rotate: Defines the rotation angle of the element in degrees as it scrolls.</li>
+                <li>data-opacity: Defines the starting opacity of the element, which decreases as the user scrolls down the page.</li>
+              </uL>
+              <br/>
+              <h3>JavaScript Initialization</h3>
+              <p>After including the plugin script, initialize it with the following JavaScript code:</p>
+              <pre><div class="language-html" style="color:#f8f8f2;background:#282a36;text-shadow:0 1px rgba(0, 0, 0, 0.3);font-family:Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none;padding:1em;margin:.5em 0;overflow:auto;border-radius:0.3em"><code class="language-html" style="color:#f8f8f2;background:none;text-shadow:0 1px rgba(0, 0, 0, 0.3);font-family:Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none"><span class="linenumber react-syntax-highlighter-line-number" style="display:inline-block;min-width:1.25em;padding-right:1em;text-align:right;user-select:none;color:#6272a4"></span><span></span><span  class="token" style="color:#f1fa8c">parallaxGalaxy.init();</span></code></div></pre>
+                <p>This will automatically apply the parallax effects to all elements within the .parallax-container that have the necessary data-* attributes.</p>
+
+                <h3>API Reference</h3>
+                <p>  parallaxGalaxy<br/>
+                  The main object containing all methods and properties of the plugin.</p>
+
+                  <h4>Properties</h4>
+                  <ul>
+                    <li>
+                    <b>parallaxElements:</b> An array to store all elements that will have the parallax effect applied.
+                  </li>
+                <li>
+                    <b>selectors:</b> Contains the CSS selectors used to find the parallax container and elements.
+                    <ul>
+                      <li>
+                        <b>parallaxContainer: </b> The selector for the main container that holds the parallax elements. Default: ".parallax-container"
+                        </li>
+                        <li>
+                        <b>parallaxElement:</b> The selector for individual parallax elements. Default: "div[data-ease]"
+                      </li>
+                    </ul>
+                  </li>
+
+                  
+                  </ul>
+                  </ul>
+                  <h4>Methods</h4>
+                    <ul>
+                      <li>
+                      <b>applyParallax(elements):</b> The core function that calculates and applies the parallax effects based on the scroll position.
+                      </li>
+                    <li>
+                    elements: An array of elements to which the parallax effects will be applied.
+                  </li>
+<li>
+                    init(): Initializes the plugin by finding all relevant elements and applying the parallax effects. It automatically calls applyParallax().
+                  </li>
+                  </ul>
+
+                  <h4>Customization</h4>
+                  <p>
+                    The Parallax Galaxy Plugin can be customized by modifying the selectors property to target different containers or elements. Additionally, you can add more data attributes to control other CSS properties as needed.</p>
+
+                    <h4>Browser Compatibility </h4>
+                      <p>The Parallax Galaxy Plugin is compatible with all modern browsers that support querySelectorAll, addEventListener, and CSS transform properties.</p>
+                   
+                      <h4>License</h4>
+<p>                          This plugin is open-source and available under the MIT License.
+                    </p>
+                   
+                  
+          </div>
+      </div>
+
+    </section>
+    
+    <div class="main-bottom-container">
+      <div class="main-bg-con">
+      <p>Transform your website's user experience with a custom <b>JavaScript parallax plugin</b>. This innovative tool creates a captivating depth effect, making your web pages more engaging and visually appealing. By incorporating smooth scrolling and dynamic background images, your site will stand out in search results. Optimize your website's performance and improve user interaction with this easy-to-integrate solution. Perfect for web developers and designers, this parallax effect enhances storytelling and keeps visitors on your site longer. Discover the benefits of a personalized JavaScript parallax plugin and elevate your online presence today with this cutting-edge web design technique!</p>
+    </div>
+    <div class="whiteBg-logo"><a href="/"><img src="https://simplifyscript.com/wp-content/uploads/2024/08/logo.png"/></a></div>
+    </div>
+  </body>
+
+<script>
+ 
+  var images = [];
+
+images[0] = ['https://simplifyscript.com/wp-content/uploads/2024/08/fire1.png'];
+images[1] = ['https://simplifyscript.com/wp-content/uploads/2024/08/fire2.png'];
+images[2] = ['https://simplifyscript.com/wp-content/uploads/2024/08/fire3.png'];
+images[2] = ['https://simplifyscript.com/wp-content/uploads/2024/08/fire4.png'];
+var index = 0;
+
+function change() {
+   document.querySelector(".fire-sprite img").src = images[index];
+   index > 1 ? index = 0 : index++;
+}
+
+window.onload = function () {
+    setInterval(change, 100);
+};
+
+
+</script>
+<script src="./js/parallax-galaxy.min.js"></script>
+</html>
