@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <title>Project Dashboard</title>
+  </head>
+  <body>
+    <div class="dashboard">
+      <!-- Mobile Overlay -->
+      <div class="mobile-overlay" id="mobile-overlay"></div>
+
+      <!-- Header -->
+      <header class="header">
+        <div class="header-left">
+          <button class="mobile-toggle" id="menu-toggle">
+            <i class="fas fa-bars"></i>
+          </button>
+          <div class="search-bar">
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="Search..." />
+          </div>
+        </div>
+        <div class="header-right">
+          <button class="theme-toggle" id="themeToggle">
+            <i class="fas fa-moon"></i>
+          </button>
+          <div class="notification">
+            <i class="fas fa-bell"></i>
+            <span class="notification-badge" id="notificationBadge">3</span>
+          </div>
+          <div class="user-profile">
+            <img src="assets/images/man.jpg" alt="image profile" />
+          </div>
+        </div>
+      </header>
+
+      <!-- Sidebar -->
+      <aside class="sidebar" id="sidebar">
+        <div class="logo">
+          <i class="fas fa-code"></i>
+          <h1>CodeJabazz</h1>
+        </div>
+        <div class="nav-title">Main Menu</div>
+        <div class="nav-links">
+          <a class="nav-item active" href="#">
+            <i class="fas fa-home"></i>
+            <span>Dashboard</span>
+          </a>
+          <a href="#" class="nav-item">
+            <i class="fas fa-project-diagram"></i>
+            <span>Projects</span>
+          </a>
+          <a href="#" class="nav-item">
+            <i class="fas fa-calendar-alt"></i>
+            <span>Calendar</span>
+          </a>
+          <a href="#" class="nav-item">
+            <i class="fas fa-users"></i>
+            <span>Team</span>
+          </a>
+          <a href="#" class="nav-item">
+            <i class="fas fa-chart-pie"></i>
+            <span>Reports</span>
+          </a>
+          <a href="#" class="nav-item">
+            <i class="fas fa-cog"></i>
+            <span>Settings</span>
+          </a>
+        </div>
+        <div class="nav-title">Team Members
+        </div>
+        <div class="nav-links">
+          <div class="team-member">
+            <img src="assets/images/boy.jpg" alt="Member avatar" class="member-avatar"/>
+            <span>Alice</span>
+          </div>
+          <div class="team-member">
+            <img src="assets/images/girl1.jpg" alt="Member avatar" class="member-avatar"/>
+            <span>Bob</span>
+          </div>
+          <div class="team-member">
+            <img src="assets/images/man.jpg" alt="Member avatar" class="member-avatar"/>
+            <span>Charlie</span>
+        </div>  
+         <div class="team-member">
+            <img src="assets/images/girl-glasses.png" alt="Member avatar" class="member-avatar"/>
+            <span>Sourabh</span>
+        </div>  
+      </aside>
+      <!-- Main Content -->
+      <main class="content">
+        <!-- Welcome Banner -->
+        <div class="welcome-banner">
+          <h1>Welcome back, John!</h1>
+          <p>Here's what's happening with your projects today.</p>
+          <button class="btn btn-light">
+            <i class="fas fa-plus"></i> Create New Project
+          </button>
+        </div>
+        <!-- Profile Cards -->
+        <div class="profile-card card">
+          <img src="assets/images/man.jpg" alt="" class="profile-image">
+          <div class="profile-info">
+            <h2>John Doe</h2>
+            <p>Software Developer</p>
+            <div class="progress-ring">
+              <svg class="progress-circle" width="100" height="100" viewBox="0 0 100 100">
+                <circle class="progress-bg" cx="50" cy="50" r="45" />
+                <circle class="progress-fill" cx="50" cy="50" r="45" />
+              </svg>
+              <div class="progress-text">75%</div>
+            </div>  
+            <div class="profile-stats">
+                <div class="stat-item">
+                  <span class="stat-value">12</span>
+                  <span class="stat-label">Projects</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-value">24</span>
+                  <span class="stat-label">Tasks</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-value">89%</span>
+                  <span class="stat-label">Success</span>
+                </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <!-- Footer -->
+      <footer class="footer"></footer>
+    </div>
+  </body>
+  <script src="assets/js/script.js"></script>
+</html>
