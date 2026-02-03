@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Be My Valentine?</title>
+  <style>
+    :root { --bg1:#ffdde1; --bg2:#ee9ca7; --card:#ffffffcc; --text:#2b2b2b; }
+    body{
+      margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      min-height:100vh; display:grid; place-items:center;
+      background: radial-gradient(circle at top, var(--bg1), var(--bg2));
+      overflow:hidden;
+    }
+    .card{
+      width:min(520px, 92vw);
+      background: var(--card);
+      border:1px solid #ffffff80;
+      backdrop-filter: blur(10px);
+      border-radius:24px;
+      padding:28px;
+      box-shadow: 0 18px 50px rgba(0,0,0,.15);
+      text-align:center;
+      position:relative;
+    }
+    h1{ margin:0 0 10px; font-size: clamp(28px, 4vw, 40px); color:var(--text); }
+    p{ margin:0 0 22px; font-size: 16px; color:#444; }
+    .btns{ display:flex; gap:14px; justify-content:center; flex-wrap:wrap; }
+    button{
+      border:0; padding:12px 18px; border-radius:999px;
+      font-weight:700; cursor:pointer; font-size:16px;
+      transition: transform .15s ease, box-shadow .15s ease;
+      box-shadow: 0 10px 18px rgba(0,0,0,.12);
+      user-select:none;
+    }
+    #yes{ background:#ff3b6e; color:white; }
+    #no{
+      background:#ffffff; color:#ff3b6e; border:2px solid #ff3b6e; position:relative;
+      transition: left .18s ease, top .18s ease, transform .15s ease, box-shadow .15s ease;
+      will-change: left, top;
+    }
+    button:hover{ transform: translateY(-2px); }
+    .hearts{
+      position:absolute; inset:0; pointer-events:none; overflow:hidden; border-radius:24px;
+    }
+    .heart{
+      position:absolute; bottom:-30px; font-size:20px; opacity:.8;
+      animation: floatUp 3.2s linear forwards;
+      filter: drop-shadow(0 6px 10px rgba(0,0,0,.15));
+    }
+    @keyframes floatUp{
+      to { transform: translateY(-560px) rotate(18deg); opacity:0; }
+    }
+    .final{
+      display:none;
+      margin-top:10px;
+      padding:14px 16px;
+      border-radius:16px;
+      background:#fff;
+      border:1px solid #ffd1dc;
+      color:#333;
+      line-height:1.35;
+    }
+    .small{ font-size:13px; opacity:.75; margin-top:14px; }
+  </style>
+</head>
+<body>
+  <div class="card" id="card">
+    <div class="hearts" id="hearts"></div>
+    <h1>Will you be my Valentine? 💘</h1>
+    <p>I have a very important question…</p>
+
+    <div class="btns">
+      <button id="yes">Yes 💖</button>
+      <button id="no">No 🙈</button>
+    </div>
+
+    <div class="final" id="final">
+      <h2 style="margin:0 0 6px;">YAY!! 🥰</h2>
+      <div id="finalText">I’m officially the luckiest person today.</div>
+      <div class="small">Screenshot this and send it to me 😄</div>
+    </div>
+  </div>
+
+  <script>
+    const yes = document.getElementById("yes");
+    const no = document.getElementById("no");
+    const finalBox = document.getElementById("final");
+    const finalText = document.getElementById("finalText");
+    const hearts = document.getElementById("hearts");
+    const card = document.getElementById("card");
+
+    // Customize these:
+    const name = "Runjhun"; // e.g. "Aanya"
+    const from = "Sourabh"; // e.g. "—Rahul"
+    const messages = [
+      "Ok so… dinner date? 🍜",
+      "I’ll bring chocolates. 🍫",
+      "You just made my whole week. 💞",
+      "Locked in. Valentine confirmed. ✅",
+    ];
+
+    function popHearts(count=14){
+      for(let i=0;i<count;i++){
+        const s = document.createElement("div");
+        s.className="heart";
+        s.textContent = ["💖","💘","💝","💕","💗"][Math.floor(Math.random()*5)];
+        s.style.left = Math.random()*100 + "%";
+        s.style.fontSize = (16 + Math.random()*18) + "px";
+        s.style.animationDuration = (2.4 + Math.random()*1.6) + "s";
+        s.style.opacity = (0.5 + Math.random()*0.5);
+        hearts.appendChild(s);
+        setTimeout(()=>s.remove(), 3800);
+      }
+    }
+
+    function clamp(v, min, max){ return Math.max(min, Math.min(max, v)); }
+
+    let dodges = 0;
+    function dodge(){
+      dodges++;
+      const rect = card.getBoundingClientRect();
+      const btnRect = no.getBoundingClientRect();
+
+      // Move within the card bounds
+      const maxX = rect.width - btnRect.width - 24;
+      const maxY = rect.height - btnRect.height - 24;
+
+      const x = clamp(Math.random()*maxX, 12, maxX);
+      const y = clamp(Math.random()*maxY, 12, maxY);
+
+      no.style.position = "absolute";
+      no.style.left = x + "px";
+      no.style.top = y + "px";
+
+      // Make Yes slightly bigger each dodge 😄
+      const scale = 1 + Math.min(dodges * 0.08, 0.6);
+      yes.style.transform = `scale(${scale})`;
+
+      popHearts(6);
+      if (dodges === 3) no.textContent = "Are you sure? 😳";
+      if (dodges === 6) no.textContent = "Can’t click me 😅";
+      if (dodges === 9) no.textContent = "Okay okay… 😂";
+    }
+
+    // Works on hover (desktop) + tap (mobile)
+    no.addEventListener("mouseenter", dodge);
+    no.addEventListener("touchstart", (e)=>{ e.preventDefault(); dodge(); }, {passive:false});
+
+    yes.addEventListener("click", ()=>{
+      const msg = messages[Math.floor(Math.random()*messages.length)];
+      finalBox.style.display = "block";
+      finalText.textContent =
+        (name ? `${name}, ` : "") + msg + (from ? ` ${from}` : "");
+      popHearts(22);
+      yes.disabled = true;
+      no.disabled = true;
+      no.remove();
+      yes.style.opacity = 0.9;
+    });
+  </script>
+</body>
+</html>
